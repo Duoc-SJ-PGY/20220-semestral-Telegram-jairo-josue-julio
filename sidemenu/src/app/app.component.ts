@@ -19,6 +19,7 @@ export class AppComponent {
   public appPages1 = [
     { title: 'Invitar amigos', url: 'invitar-amigos', icon: 'person-add' },
     { title: 'Aprende sobre Telegram', url: 'aprende-sobre-telegram', icon: 'help-circle' },
+    { title: 'Iniciar sesion', url: 'login', icon: 'chevron-forward-circle' },
   ];
 
   constructor(private api: HttpClient) {
