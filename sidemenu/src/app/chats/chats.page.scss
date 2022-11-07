@@ -71,6 +71,7 @@ ion-content{
              flex-direction: column;
              .message{
                 border-radius: 18px;
+                
                 padding: 18px 20px;
                 margin-top: 5px;
                 margin-bottom: 5px;
@@ -91,6 +92,7 @@ ion-content{
           .message.last{
             &:before{
               content: "";
+              
               position: absolute;
               z-index: 0;
               bottom: 0;
