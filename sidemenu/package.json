@@ -24,11 +24,18 @@
     "@capacitor/haptics": "4.0.1",
     "@capacitor/keyboard": "4.0.1",
     "@capacitor/status-bar": "4.0.1",
+    "@ionic-native/firebase-analytics": "^5.36.0",
     "@ionic-native/geolocation": "^5.36.0",
+    "@ionic-native/sqlite": "^5.36.0",
     "@ionic/angular": "^6.1.9",
     "@ionic/storage-angular": "^3.0.6",
+    "cordova-plugin-firebase-analytics": "^7.0.5",
+    "express": "^4.18.2",
+    "firebase": "^8.10.1",
     "ionicons": "^6.0.3",
+    "morgan": "^1.10.0",
     "rxjs": "~6.6.0",
+    "socket.io": "^4.5.3",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
@@ -66,5 +73,8 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.7.3"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "main": "karma.conf.js",
+  "keywords": [],
+  "license": "ISC"
 }

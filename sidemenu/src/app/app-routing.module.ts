@@ -42,17 +42,14 @@ const routes: Routes = [
     loadChildren: () => import('./invitar-amigos/invitar-amigos.module').then( m => m.InvitarAmigosPageModule)
   },
   {
-    path: 'aprende-sobre-telegram',
-    loadChildren: () => import('./aprende-sobre-telegram/aprende-sobre-telegram.module').then( m => m.AprendeSobreTelegramPageModule)
-  },
-  {
     path: 'chats',
     loadChildren: () => import('./chats/chats.module').then( m => m.ChatsPageModule)
   },
   {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
-  },  {
+  },
+  {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
