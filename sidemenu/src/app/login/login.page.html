@@ -1,8 +1,6 @@
-<ion-header class="ion-no-border" mode="" [translucent]="true">
-  <ion-toolbar class="ion-padding">
-      <ion-back-button defaultHref="folder/:id" slot="start"></ion-back-button>
-    <ion-title slot="start">Contactos</ion-title>
-
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,10 +14,6 @@
         <ion-item>
           <ion-label position="floating">Nombre</ion-label>
           <ion-input formControlName="nombre"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Numero de telefono</ion-label>
-          <ion-input formControlName="telefono"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Contraseña</ion-label>
@@ -37,7 +31,8 @@
 <ion-footer>
   <ion-toolbar color="primary">
     <ion-buttons slot="end">
-      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
+      <ion-button (click)="showLoading()" [routerLink]="['/registro']">Registrarse</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>
+

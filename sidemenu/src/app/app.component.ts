@@ -18,7 +18,7 @@ export class AppComponent {
   ];
   public appPages1 = [
     { title: 'Invitar amigos', url: 'invitar-amigos', icon: 'person-add' },
-    { title: 'Iniciar sesion', url: 'login', icon: 'chevron-forward-circle' },
+    
   ];
 
   constructor(private api: HttpClient) {

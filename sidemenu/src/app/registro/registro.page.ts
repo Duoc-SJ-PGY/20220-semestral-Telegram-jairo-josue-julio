@@ -5,7 +5,7 @@ import {
   Validators,
   FormBuilder
 } from '@angular/forms';
-import { AlertController } from '@ionic/angular';
+import { AlertController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registro',
@@ -17,10 +17,10 @@ export class RegistroPage implements OnInit {
   formularioRegistro: FormGroup;
   
   constructor(public fb: FormBuilder,
-    public alertController: AlertController) {
+    public alertController: AlertController,
+    public navCtrl: NavController) {
     this.formularioRegistro = this.fb.group({
       'nombre': new FormControl("", Validators.required),
-      'telefono': new FormControl("", Validators.required),
       'password': new FormControl("", Validators.required),
       'confirmacionPassword': new FormControl("", Validators.required)
     });
@@ -45,11 +45,13 @@ export class RegistroPage implements OnInit {
 
     var usuario = {
       nombre: f.nombre,
-      telefono: f.telefono,
       password: f.password
     }
 
     localStorage.setItem('usuario',JSON.stringify(usuario));
+
+    localStorage.setItem('ingresado','true');
+    this.navCtrl.navigateRoot('login');
   }
 
 }
