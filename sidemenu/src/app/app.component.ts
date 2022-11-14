@@ -18,6 +18,7 @@ export class AppComponent {
   ];
   public appPages1 = [
     { title: 'Invitar amigos', url: 'invitar-amigos', icon: 'person-add' },
+    { title: 'Cerrar Sesion', url: 'login', icon: 'exit' },
     
   ];
 
