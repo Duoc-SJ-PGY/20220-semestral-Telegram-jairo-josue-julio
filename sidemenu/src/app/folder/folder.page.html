@@ -5,11 +5,13 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title slot="start">Telegram</ion-title>
-    <ion-icon name="search-outline" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div>
+    <ion-searchbar animated="true" placeholder="Animated"></ion-searchbar>
+  </div>
   <div class="chat-list" *ngIf="activeTab === 'chats'">
     <div class="recent-chats ion-padding">
       <div class="chats">
