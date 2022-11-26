@@ -21,12 +21,14 @@ export class PersonacercaPage implements OnInit {
       this.lat = geoposition.coords.latitude;
       this.lon = geoposition.coords.longitude;
 
-      let latSanjoaquin = -33.49972601464;
-      let lonSanjoaquin = -70.6163849865586;
+      let latSanjoaquin = -33.59832742401395;
+      let lonSanjoaquin = -70.57915683257822;
 
       this.total = this.calculateDistance(this.lon, lonSanjoaquin, this.lat, latSanjoaquin) + "KM";
     });
   }
+
+  
   
   calculateDistance(lon1, lon2, lat1, lat2){
     let p = 0.017453292519943295;

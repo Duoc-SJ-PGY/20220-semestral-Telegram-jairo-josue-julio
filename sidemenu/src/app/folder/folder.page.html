@@ -15,89 +15,13 @@
   <div class="chat-list" *ngIf="activeTab === 'chats'">
     <div class="recent-chats ion-padding">
       <div class="chats">
-        <ion-item lines="none" routerLink="/chats">
+        <ion-item lines="none" routerLink="/chats" *ngFor="let user of users">
           <ion-avatar slot="start">
             <img src="https://i.pravatar.cc/321" alt="">
           </ion-avatar>
           <ion-label class="ion-text-nowrap">
-            <h2>El Bananero</h2>
-            <p>Escribiendo...</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>1</ion-badge>
-            <p><ion-datetime-button  datetime="datetime"></ion-datetime-button>
-              <ion-modal  [keepContentsMounted]="boolean">
-                <ng-template>
-                  <ion-datetime id="datetime"></ion-datetime>
-                </ng-template>
-              </ion-modal>
-            </p>
-          </div>
-        </ion-item>
-        <ion-item lines="none" routerLink="/chats">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/324" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Papa</h2>
-            <p>nos vemos</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>3</ion-badge>
-            <p><ion-datetime-button datetime="datetime"></ion-datetime-button>
-              <ion-modal [keepContentsMounted]="true">
-                <ng-template>
-                  <ion-datetime id="datetime"></ion-datetime>
-                </ng-template>
-              </ion-modal>
-            </p>
-          </div>
-        </ion-item>
-        <ion-item lines="none" routerLink="/chats">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/327" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Profe</h2>
-            <p>te sacaste un 1</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>1</ion-badge>
-            <p><ion-datetime-button datetime="datetime"></ion-datetime-button>
-              <ion-modal [keepContentsMounted]="true">
-                <ng-template>
-                  <ion-datetime id="datetime"></ion-datetime>
-                </ng-template>
-              </ion-modal>
-            </p>
-          </div>
-        </ion-item>
-        <ion-item lines="none" routerLink="/chats">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/327" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Profe</h2>
-            <p>te sacaste un 1</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>4</ion-badge>
-            <p><ion-datetime-button datetime="datetime"></ion-datetime-button>
-              <ion-modal [keepContentsMounted]="true">
-                <ng-template>
-                  <ion-datetime id="datetime"></ion-datetime>
-                </ng-template>
-              </ion-modal>
-            </p>
-          </div>
-        </ion-item>
-        <ion-item lines="none" routerLink="/chats">
-          <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/327" alt="">
-          </ion-avatar>
-          <ion-label class="ion-text-nowrap">
-            <h2>Profe</h2>
-            <p>te sacaste un 1</p>
+            <h2>{{user.name}}</h2>
+            <p>{{user.state}}</p>
           </ion-label>
           <div class="info-div">
             <ion-badge>1</ion-badge>
