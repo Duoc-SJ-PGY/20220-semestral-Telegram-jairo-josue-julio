@@ -17,7 +17,7 @@
       <div class="chats">
         <ion-item lines="none" routerLink="/chats" *ngFor="let user of users">
           <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/321" alt="">
+            <img src='{{user.imagen}}' alt="">
           </ion-avatar>
           <ion-label class="ion-text-nowrap">
             <h2>{{user.name}}</h2>

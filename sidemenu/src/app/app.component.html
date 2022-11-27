@@ -5,7 +5,7 @@
         <ion-list id="inbox-list">
 
           <ion-avatar slot="start">
-            <img src="https://i.pravatar.cc/329" alt="">
+            <img src="assets/img/JC.jpg" alt="">
           </ion-avatar>
           
           <ion-accordion-group>
@@ -13,19 +13,26 @@
               <ion-item slot="header" color="light">
                 <ion-label class="ion-text-nowrap">
                   <h2>JC</h2>
-                  <p>+56999998888</p>
+                  <p>+56 9 7332 8358</p>
                 </ion-label>
               </ion-item>
               <div class="ion-padding" slot="content">
                 <ion-avatar id ="avatar2">
-                  <img src="https://i.pravatar.cc/321" alt="">
+                  <img src="assets/img/JC.jpg" alt="">
                 </ion-avatar>
                 <span class="details" slot="">
-                  <h1>Bananero</h1>
+                  <h2>JC</h2>
                 </span>
               </div>
             </ion-accordion>
           </ion-accordion-group>
+
+          <div>
+            <ion-item>
+              <ion-label>Tema Oscuro</ion-label>
+              <ion-toggle  slot="end" (ionChange)='toggleTheme($event)'></ion-toggle>
+            </ion-item>
+          </div>
 
 
           

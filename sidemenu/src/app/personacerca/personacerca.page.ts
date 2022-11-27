@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Geolocation, Geoposition } from '@ionic-native/geolocation/ngx';
+import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { map } from "rxjs/operators";
 
 @Component({
   selector: 'app-personacerca',
@@ -8,7 +11,7 @@ import { Geolocation, Geoposition } from '@ionic-native/geolocation/ngx';
 })
 export class PersonacercaPage implements OnInit {
 
-  constructor( public geolocation: Geolocation) { 
+  constructor( public geolocation: Geolocation, private activatedRoute: ActivatedRoute, private http: HttpClient) { 
     this.getGeolocation();
    }
 
@@ -40,7 +43,28 @@ export class PersonacercaPage implements OnInit {
 
 
 
-  ngOnInit() {
-  }
+users: any = [];
+
+activeTab = 'chats';
+
+segmentChange(e){
+  this.activeTab=e.target.value;
+}
+
+ngOnInit(){
+  this.getUsers().subscribe(res => {
+    this.users = res;
+  });
+}
+
+getUsers(){
+  return this.http
+  .get("assets/files/folder.json")
+  .pipe(
+    map((res:any) =>{
+      return res.data;
+    })
+  )
+}
 
 }

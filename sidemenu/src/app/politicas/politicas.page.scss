@@ -1,0 +1,52 @@
+ion-toolbar{
+    --background: #7c7899;
+    font-family: "Satisfy",cursive !important;
+    letter-spacing: 2px;
+    font-size: 2rem !important;
+    color: #fff;
+    ion-title{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 5px;
+      font-size: 1.6rem !important;
+    }
+  }
+      ion-avatar{
+        width: 20% !important;
+        height: 20% !important;
+      }
+  
+  .version{
+      p{
+          margin-left: 50px;
+      }
+  }
+  
+  .info{
+  
+    display: flex;
+    align-items: center;
+    ion-avatar{
+          max-width: 51px;
+          max-height: 51px;
+          margin-left: 0px;
+    }
+    .details{
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      h1,p{
+        margin: 0;
+        color: #fff;
+        margin-left: 0px;
+      }
+      h1{
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      p{
+        opacity: 0.7;
+        margin-top: 3px;
+        font-size: 0.8rem;
+      }
+    }
+  }
