@@ -1,0 +1,93 @@
+ion-content{
+    --background: #364aa5;
+    border-left: 7px solid #ffd359;
+    .imagen{
+        width: 80px;
+        height: 80px;
+        margin-inline: 120px;
+        margin-top: 3rem;
+        
+    }
+    .header{
+        padding: 0 12vw;
+        text-align: center;
+        color: #fff;
+        font-family: 'Merienda', cursive;
+        h3{
+            font-size: 1.8rem;
+            color: #9d9bef;
+            background: linear-gradient(#1497be, #1c2aec);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: text 3s linear infinite;
+            span{
+                color: #fff;
+            }
+        }
+        h1{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        @keyframes text {
+            0%{
+                filter: hue-rotate(0deg);
+            }
+            100%{
+                filter: hue-rotate(360deg);
+            }
+        }
+    }
+    .form{
+        padding: 0 12vw;
+        ion-input{
+            --background: #3534be;
+            --padding-start: 33px; 
+            height: 55px;
+            border-radius: 25px;
+            margin-bottom: 22px;
+            --placeholder-color: #9d9bef;
+            --color: #fff;
+        }
+
+    }
+    .button{
+        width: 50vw;
+        background-color: #ffd359;
+        padding: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        justify-content: flex-end;
+        ion-icon{
+            margin-left: 30px;
+        }
+    }
+    .signup{
+        background-color: #ff987b;
+        
+    }
+    .footer{
+        color: #fff;
+        padding: 0 12vw;
+        
+        text-align: center;
+
+        h3{
+            font-size: 1rem;
+            font-weight: 400;
+
+            span{
+                font-size: 1.2rem;
+                color: #ff987b;
+                font-weight: 500;
+            }
+        }
+    }
+    .signup-footer{
+        margin-top: 10px;
+    }
+}

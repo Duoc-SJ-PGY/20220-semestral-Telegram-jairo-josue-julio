@@ -1,38 +1,34 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Bienvenido a Telegram</ion-title>
-  </ion-toolbar>
-</ion-header>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+</head>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Iniciar Sesion</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <form [formGroup]="formularioLogin">
-        <ion-item>
-          <ion-label position="floating">Nombre</ion-label>
-          <ion-input formControlName="nombre"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Contraseña</ion-label>
-          <ion-input formControlName="password" type="password"></ion-input>
-        </ion-item>
-      </form>
-      <br>
-      <ion-button (click)="ingresar()">
-        Ingresar
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
+
+  <div class="imagen">
+    <img src="assets/img/telegram.png" alt="">
+  </div>
+
+  <div class="header">
+    <h3>Bienvenido a Telegram</h3>
+    <h1>Porfavor Inicia Sesion<br>para continuar</h1>
+  </div>
+
+  <div class="form">
+    <form [formGroup]="formularioLogin">
+    <ion-input  type="Nombre" placeholder="Nombre"  formControlName="nombre"></ion-input>
+    <ion-input placeholder="Contraseña" formControlName="password" type="password"></ion-input>
+    </form>
+  </div>
+
+
+  <div class="button" (click)="ingresar()">
+    Login<ion-icon name="chevron-forward-outline"></ion-icon> 
+  </div>
+  <div class="footer">
+    <h3 [routerLink]="['/registro']">No estas registrado? <span (click)="showLoading()">Registrate</span></h3>
+  </div>
+
+  
 </ion-content>
-
-<ion-footer>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="end">
-      <ion-button (click)="showLoading()" [routerLink]="['/registro']">Registrarse</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-footer>
-
