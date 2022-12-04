@@ -64,6 +64,10 @@ const routes: Routes = [
     path: 'politicas',
     loadChildren: () => import('./politicas/politicas.module').then( m => m.PoliticasPageModule)
   },
+  {
+    path: 'coming-soon',
+    loadChildren: () => import('./coming-soon/coming-soon.module').then( m => m.ComingSoonPageModule)
+  },
 
   
 
