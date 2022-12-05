@@ -8,7 +8,21 @@ ion-content{
         height: 80px;
         margin-inline: 120px;
         margin-top: 3rem;
+        background: linear-gradient(to right, var(--cores-dancantes));
+        border-radius: 10px;
+        position: relative;
+        z-index: 999;
+        animation: coresDancantes 5s linear infinite;
     }
+
+    @keyframes coresDancantes {
+        100%{
+            filter: hue-rotate(360deg);
+        }
+        
+    }
+
+
     .header{
         padding: 0 12vw;
         text-align: center;
@@ -16,24 +30,11 @@ ion-content{
         font-family: 'Merienda', cursive;
         h3{
             font-size: 1.3rem;
-            color: #9d9bef;
-            background: linear-gradient(#1497be, #1c2aec);
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            animation: text 3s linear infinite;
+            color: #ffffff;
         }
         h1{
             font-size: 1rem;
             font-weight: 400;
-        }
-        @keyframes text {
-            0%{
-                filter: hue-rotate(0deg);
-            }
-            100%{
-                filter: hue-rotate(360deg);
-            }
         }
     }
     .form{

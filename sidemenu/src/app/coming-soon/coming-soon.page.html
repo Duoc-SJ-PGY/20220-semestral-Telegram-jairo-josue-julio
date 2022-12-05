@@ -1,9 +1,35 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>ComingSoon</ion-title>
+<ion-header class="ion-no-border" mode="" [translucent]="true">
+  <ion-toolbar class="ion-padding">
+      <ion-back-button defaultHref="/perfil" slot="start"></ion-back-button>
+    <ion-title slot="start">Coming Soon</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/img/dados.jpg" />
+    <ion-card-header>
+      <ion-card-title>Juegos</ion-card-title>
+      <ion-card-subtitle>Zona de juegos</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Esperamos construir una nueva funcion en la aplicacion para contenido de Videojuegos...
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <img alt="Silhouette of mountains" src="assets/img/comida.jpg" />
+    <ion-card-header>
+      <ion-card-title>Recetas</ion-card-title>
+      <ion-card-subtitle>Cocina</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Entregaremos una nueva zona donde podras visitar distintas recetas que la gente creara y las suba a la aplicacion.
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
