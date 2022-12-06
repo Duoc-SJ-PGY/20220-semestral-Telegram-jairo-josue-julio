@@ -68,6 +68,10 @@ const routes: Routes = [
     path: 'coming-soon',
     loadChildren: () => import('./coming-soon/coming-soon.module').then( m => m.ComingSoonPageModule)
   },
+  {
+    path: 'privacidad',
+    loadChildren: () => import('./privacidad/privacidad.module').then( m => m.PrivacidadPageModule)
+  },
 
   
 

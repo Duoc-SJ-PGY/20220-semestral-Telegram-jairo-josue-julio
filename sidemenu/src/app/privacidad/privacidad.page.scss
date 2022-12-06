@@ -1,0 +1,32 @@
+ion-header{
+    ion-toolbar{
+      --background: #7c7899;
+      font-family: "Satisfy",cursive !important;
+      letter-spacing: 2px;
+      font-size: 2rem !important;
+      color: #fff;
+      ion-title{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 3px;
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+
+
+  ion-content{
+    ion-list, ion-item{
+        ion-label{
+            h2{
+                margin-left: 10px;
+                color: #7f6efd;
+            }
+        }
+    }
+    p{
+        font-size: 12px;
+        margin-left: 30px;
+        opacity: 0.7;
+    }
+    
+  }

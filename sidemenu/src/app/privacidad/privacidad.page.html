@@ -1,0 +1,136 @@
+<ion-header class="ion-no-border" mode="" [translucent]="true">
+  <ion-toolbar class="ion-padding">
+      <ion-back-button defaultHref="/perfil" slot="start"></ion-back-button>
+    <ion-title slot="start">Privacidad y Seguridad</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+  <ion-label>
+    <h2>Privacidad</h2>
+  </ion-label>
+
+  <ion-item>
+    <ion-label>Número de telefono</ion-label>
+    <ion-select placeholder="Mis contactos">
+      <ion-select-option value="todos">Todos</ion-select-option>
+      <ion-select-option value="misContactos">Mis contactos</ion-select-option>
+      <ion-select-option value="nadie">Nadie</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Última vez y en línea</ion-label>
+    <ion-select placeholder="Todos">
+      <ion-select-option value="todos">Todos</ion-select-option>
+      <ion-select-option value="misContactos">Mis contactos</ion-select-option>
+      <ion-select-option value="nadie">Nadie</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Fotos y videos de perfil</ion-label>
+    <ion-select placeholder="Todos">
+      <ion-select-option value="todos">Todos</ion-select-option>
+      <ion-select-option value="misContactos">Mis contactos</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mensajes reenviados</ion-label>
+    <ion-select placeholder="Todos">
+      <ion-select-option value="todos">Todos</ion-select-option>
+      <ion-select-option value="misContactos">Mis contactos</ion-select-option>
+      <ion-select-option value="nadie">Nadie</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Llamadas</ion-label>
+    <ion-select placeholder="Todos">
+      <ion-select-option value="todos">Todos</ion-select-option>
+      <ion-select-option value="misContactos">Mis contactos</ion-select-option>
+      <ion-select-option value="nadie">Nadie</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Grupos y canales</ion-label>
+    <ion-select placeholder="Todos">
+      <ion-select-option value="todos">Todos</ion-select-option>
+      <ion-select-option value="misContactos">Mis contactos</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+<ion-list>
+  <ion-label>
+    <h2>Seguridad</h2>
+  </ion-label>
+
+  <ion-item lines="none" routerLink="/privacidad">
+    <ion-label class="ion-text-nowrap">
+      <h3>Código de bloqueo</h3>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Verifica en dos pasos</ion-label>
+    <ion-select placeholder="Desactivada">
+      <ion-select-option value="activada">Activada</ion-select-option>
+      <ion-select-option value="desactivada">Desactivada</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item lines="none" routerLink="/privacidad">
+    <ion-label class="ion-text-nowrap">
+      <h3>Dispositivos</h3>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+<p>Gestiona tus sesiones en todos tus Dispositivos</p>
+
+<ion-list>
+  <ion-label>
+    <h2>Eliminar mi cuenta</h2>
+  </ion-label>
+
+  <ion-item>
+    <ion-label>Si estoy fuera</ion-label>
+    <ion-select placeholder="1 mes">
+      <ion-select-option value="1">1 mes</ion-select-option>
+      <ion-select-option value="3">3 meses</ion-select-option>
+      <ion-select-option value="6">6 meses</ion-select-option>
+      <ion-select-option value="1a">1 año</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<p>Gestiona tus sesiones</p>
+
+<ion-list>
+  <ion-label>
+    <h2>Bots y sitios web</h2>
+  </ion-label>
+
+  <ion-item lines="none" routerLink="/privacidad">
+    <ion-label class="ion-text-nowrap">
+      <h3>Dispositivos</h3>
+    </ion-label>
+  </ion-item>
+  <ion-item lines="none" routerLink="/privacidad">
+    <ion-label class="ion-text-nowrap">
+      <h3>Dispositivos</h3>
+    </ion-label>
+  </ion-item>
+</ion-list>
+  
+
+
+
+</ion-content>
