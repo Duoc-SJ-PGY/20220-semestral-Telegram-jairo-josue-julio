@@ -72,6 +72,10 @@ const routes: Routes = [
     path: 'privacidad',
     loadChildren: () => import('./privacidad/privacidad.module').then( m => m.PrivacidadPageModule)
   },
+  {
+    path: 'idioma',
+    loadChildren: () => import('./idioma/idioma.module').then( m => m.IdiomaPageModule)
+  },
 
   
 

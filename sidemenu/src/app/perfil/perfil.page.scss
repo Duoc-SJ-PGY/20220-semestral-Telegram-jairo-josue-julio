@@ -21,6 +21,18 @@ ion-toolbar{
     }
 }
 
+ion-content{
+  ion-list, ion-item{
+      ion-label{
+          h2{
+              margin-left: 10px;
+              color: #295ce9;
+          }
+      }
+  }
+}
+
+
 .info{
 
   display: flex;

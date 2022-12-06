@@ -111,7 +111,7 @@
   </ion-item>
 </ion-list>
 
-<p>Gestiona tus sesiones</p>
+<p>Se no estás en línea al menos una vez durante <br> este pereiodo, tu cuebta se eliminara junto a todos tus mensajes y contactos.</p>
 
 <ion-list>
   <ion-label>
@@ -120,17 +120,64 @@
 
   <ion-item lines="none" routerLink="/privacidad">
     <ion-label class="ion-text-nowrap">
-      <h3>Dispositivos</h3>
+      <h3>Eliminar datos de pago y envío</h3>
     </ion-label>
   </ion-item>
   <ion-item lines="none" routerLink="/privacidad">
     <ion-label class="ion-text-nowrap">
-      <h3>Dispositivos</h3>
+      <h3>Sesión iniciada con Telegram</h3>
     </ion-label>
   </ion-item>
 </ion-list>
   
+<p>Sitios web en los que has iniciado sesion con Telegram</p>
 
+<ion-list>
+  <ion-label>
+    <h2>Contactos</h2>
+  </ion-label>
+
+  <ion-item lines="none" routerLink="/privacidad">
+    <ion-label class="ion-text-nowrap">
+      <h3>Eliminar datos de pago y envío</h3>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sincronizar contactos</ion-label>
+    <ion-toggle slot="end"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sugerir contactos frecuentes</ion-label>
+    <ion-toggle slot="end"></ion-toggle>
+  </ion-item>
+</ion-list>
+
+<p>Muestra las personas a las que envias mensajes con frecuencia en la <br> parte superior de la seccion de busqueda para un acceso rapido.</p>
+
+
+<ion-list>
+  <ion-label>
+    <h2>Chats secretos</h2>
+  </ion-label>
+
+  <ion-item>
+    <ion-label>Vista previa del mapa</ion-label>
+    <ion-select placeholder="Ninguno">
+      <ion-select-option value="1">Telegram</ion-select-option>
+      <ion-select-option value="2">Google</ion-select-option>
+      <ion-select-option value="3">Ninguno</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Vista previa de enlaces</ion-label>
+    <ion-toggle slot="end"></ion-toggle>
+  </ion-item>
+</ion-list>
+
+<p>Las vistas previas de enlaces serán generadas en los servidores de Telegram. No almacenamos datos sobre los enlaces que envías</p>
 
 
 </ion-content>

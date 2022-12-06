@@ -8,7 +8,7 @@ ion-header{
       ion-title{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin-top: 3px;
-        font-size: 1.2rem !important;
+        font-size: 1.8rem !important;
       }
     }
   }
@@ -19,15 +19,25 @@ ion-header{
         ion-label{
             h2{
                 margin-left: 10px;
-                color: #7f6efd;
+                color: #295ce9;
             }
         }
     }
     p{
         font-size: 12px;
-        margin-left: 30px;
+        margin-left: 1px;
         opacity: 0.7;
     }
     
   }
+
+
+  ion-checkbox {
+    --size: 20px;
+    --background-checked: #158bec;
+  }
   
+  ion-checkbox::part(container) {
+    border-radius: 100px;
+    border: 2px solid #158bec;
+  }

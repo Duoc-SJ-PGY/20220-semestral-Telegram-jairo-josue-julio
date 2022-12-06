@@ -23,23 +23,17 @@
   <div>
     <div>
       <div>
-        <ion-item lines="none" routerLink="#">
-          <ion-label class="ion-text-nowrap">
-            <h2>+56 9 7332 8358</h2>
-            <p>Toca para cambiar numero</p>
-          </ion-label>
+        <ion-item>
+          <ion-label position="floating">Ingrese número de telefono</ion-label>
+          <ion-input placeholder="Ej: +56 9 9999 8888"></ion-input>
         </ion-item>
-        <ion-item lines="none" routerLink="#">
-          <ion-label class="ion-text-nowrap">
-            <h2>JC</h2>
-            <p>Nombre de usuario</p>
-          </ion-label>
+        <ion-item>
+          <ion-label position="floating">Escribe tu Apodo</ion-label>
+          <ion-input placeholder="Escriba aqui..."></ion-input>
         </ion-item>
-        <ion-item lines="none" routerLink="#">
-          <ion-label class="ion-text-nowrap">
-            <h2>Biografía</h2>
-            <p>Añade algunas palabras sobre ti</p>
-          </ion-label>
+        <ion-item>
+          <ion-textarea placeholder="Ingresa tu Biografía" [autoGrow]="true">
+          </ion-textarea>
         </ion-item>
       </div>
     </div>
@@ -73,6 +67,12 @@
             <h3>Coming Soon</h3>
           </ion-label>
         </ion-item>
+        <ion-item lines="none" routerLink="/idioma">
+          <ion-icon name="globe"></ion-icon>
+          <ion-label class="ion-text-nowrap">
+            <h3>Idioma</h3>
+          </ion-label>
+        </ion-item>
       </div>
     </div>
   </div>  
@@ -90,7 +90,7 @@
         <ion-item lines="none" routerLink="/politicas">
           <ion-icon name="shield-checkmark"></ion-icon>
           <ion-label class="ion-text-nowrap">
-            <h2>Politica de Privacidad</h2>
+            <h3>Politica de Privacidad</h3>
           </ion-label>
         </ion-item>
       </div>
