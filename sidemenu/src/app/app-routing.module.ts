@@ -76,6 +76,18 @@ const routes: Routes = [
     path: 'idioma',
     loadChildren: () => import('./idioma/idioma.module').then( m => m.IdiomaPageModule)
   },
+  {
+    path: 'chat-eren',
+    loadChildren: () => import('./chat-eren/chat-eren.module').then( m => m.ChatErenPageModule)
+  },
+  {
+    path: 'chat-donomar',
+    loadChildren: () => import('./chat-donomar/chat-donomar.module').then( m => m.ChatDonomarPageModule)
+  },
+  {
+    path: 'chat-doctor',
+    loadChildren: () => import('./chat-doctor/chat-doctor.module').then( m => m.ChatDoctorPageModule)
+  },
 
   
 

@@ -49,13 +49,36 @@
             <ion-icon name="call-outline"></ion-icon>
           </div>
         </ion-item>
+        <ion-item lines="none" routerLink="#">
+          <ion-avatar slot="start">
+            <img src="assets/img/donomar.jpg" alt="">
+          </ion-avatar>
+          <ion-label class="ion-text-nowrap">
+            <h2>Josue</h2>
+            <p>(20) 25 sep a las 14:17</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+        </ion-item>
       </div>
     </div>
   </div>
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
-      <ion-icon name="call-outline"></ion-icon>
+      <ion-icon  name="call"></ion-icon>
     </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button routerLink="/chat-doctor">
+        <img src="assets/img/doctor.jpg" alt="">
+      </ion-fab-button>
+      <ion-fab-button routerLink="/chat-donomar">
+        <img src="assets/img/donomar.jpg" alt="">
+      </ion-fab-button>
+      <ion-fab-button routerLink="/chat-eren">
+        <img src="assets/img/eren.jpg" alt="">
+      </ion-fab-button>
+    </ion-fab-list>
   </ion-fab>
 </ion-content>
 

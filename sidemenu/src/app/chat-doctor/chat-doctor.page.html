@@ -1,0 +1,108 @@
+<ion-toolbar>
+  <div class="header ion-padding">
+    <div class="info">
+      <ion-back-button name="chevron-back-outline" defaultHref="folder/:id"></ion-back-button>
+      <ion-avatar>
+        <img src="assets/img/doctor.jpg" alt="">
+      </ion-avatar>
+      <span class="details">
+        <h1>Doctor Raro</h1>
+        <p>Online</p>
+      </span>
+    </div>
+    <div class="calling">
+      <ion-icon name="call-outline"></ion-icon>
+    </div>
+  </div>
+</ion-toolbar>
+
+<ion-content>
+<div class="conversation ion-padding">
+  <div class="chat-section" id="chat">
+    <div class="chat">
+      <div class="yours messages">
+        <div class="message other">
+          Hola tony
+        </div>
+        <div class="message other">
+          te tengo buenas y malas noticias
+        </div>
+        <div class="last-message-other">
+          <ion-avatar>
+            <img src="assets/img/doctor.jpg" alt="">
+          </ion-avatar>
+          <div class="message last">
+            Lo bueno es que tenemos 1 entre 14 millones de posibilidades de ganar... 
+          </div>
+        </div>
+        <span><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal></span>
+      </div>
+      <div class="mine messages">
+        <div class="message">
+          Okey...en esa posibilidad ganamos supongo y que pasara?
+        </div>
+        <div class="message last">
+          final feliz?
+        </div>
+        <span>
+          <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </span>
+      </div>
+      <div class="yours messages">
+        <div class="message other">
+          la vdd...
+        </div>
+        <div class="message other">
+          La mala noticia es...
+        </div>
+        <div class="last-message-other">
+          <ion-avatar>
+            <img src="assets/img/doctor.jpg" alt="">
+          </ion-avatar>
+          <div class="message last">
+            Que no te lo puedo decir...pq si no, no sucedera...
+          </div>
+        </div>
+        <span><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal></span>
+      </div>
+      <div class="mine messages">
+        <div class="message">
+          Bueno....
+        </div>
+        <div class="message last">
+          Apostare todo en la ultima batalla ;)
+        </div>
+        <span>
+          <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="message-input">
+    <ion-input placeholder="Escriba su mensaje..."></ion-input>
+    <div class="send-button">
+      <ion-button><ion-icon name="send-sharp"></ion-icon></ion-button>
+    </div>
+  </div>
+</div>
+</ion-content>

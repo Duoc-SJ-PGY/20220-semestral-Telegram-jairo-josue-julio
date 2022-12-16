@@ -1,0 +1,146 @@
+<ion-toolbar>
+  <div class="header ion-padding">
+    <div class="info">
+      <ion-back-button name="chevron-back-outline" defaultHref="folder/:id"></ion-back-button>
+      <ion-avatar>
+        <img src="assets/img/donomar.jpg" alt="">
+      </ion-avatar>
+      <span class="details">
+        <h1>Don Omar</h1>
+        <p>Online</p>
+      </span>
+    </div>
+    <div class="calling">
+      <ion-icon name="call-outline"></ion-icon>
+    </div>
+  </div>
+</ion-toolbar>
+
+<ion-content>
+<div class="conversation ion-padding">
+  <div class="chat-section" id="chat">
+    <div class="chat">
+      <div class="yours messages">
+        <div class="message other">
+          Sali con tu mujer...
+        </div>
+        <div class="message other">
+          Sali con tu mujer...
+        </div>
+        <div class="last-message-other">
+          <ion-avatar>
+            <img src="assets/img/donomar.jpg" alt="">
+          </ion-avatar>
+          <div class="message last">
+            SALI CON TU MUJEER!!!
+          </div>
+        </div>
+        <span><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal></span>
+      </div>
+      <div class="mine messages">
+        <div class="message">
+          Que te perdone Dios, yo no lo voy a hacer
+        </div>
+        <div class="message last">
+          Los perdí a los dos y a la misma vez,
+          ya veo que todo era mentira cuando ella me decía, Que se iba pa' Puerto Rico a vacaciones con su amiga...
+          Me mintió
+        </div>
+        <span>
+          <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </span>
+      </div>
+      <div class="yours messages">
+        <div class="message other">
+          Pero mi hermano ;(
+        </div>
+        <div class="message other">
+          Perdone
+        </div>
+        <div class="last-message-other">
+          <ion-avatar>
+            <img src="assets/img/donomar.jpg" alt="">
+          </ion-avatar>
+          <div class="message last">
+            Porfavor ;(
+          </div>
+        </div>
+        <span><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal></span>
+      </div>
+      <div class="mine messages">
+        <div class="message">
+          Tú y ella en una cama, allá en Bayamo
+        </div>
+        <div class="message last">
+          Quizás en Isla Verde o Carolina, cuántos hoteles ensució
+        </div>
+        <span>
+          <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </span>
+      </div>
+      <div class="yours messages">
+        <div class="message other">
+          No me entiende
+          Que yo soy quien más sufro con todo esto, me mata el dolor
+        </div>
+        <div class="message other">
+          Perdí un amigo por la tentación
+        </div>
+        <div class="last-message-other">
+          <ion-avatar>
+            <img src="assets/img/donomar.jpg" alt="">
+          </ion-avatar>
+          <div class="message last">
+            Perdón
+          </div>
+        </div>
+        <span><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal></span>
+      </div>
+      <div class="mine messages">
+        <div class="message">
+          Adios!
+        </div>
+        <span>
+          <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="message-input">
+    <ion-input placeholder="Escriba su mensaje..."></ion-input>
+    <div class="send-button">
+      <ion-button><ion-icon name="send-sharp"></ion-icon></ion-button>
+    </div>
+  </div>
+</div>
+</ion-content>

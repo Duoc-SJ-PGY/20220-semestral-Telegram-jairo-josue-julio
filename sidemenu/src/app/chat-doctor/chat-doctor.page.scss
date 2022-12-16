@@ -1,7 +1,7 @@
 ion-toolbar{
   ion-avatar{
-    width: 50% !important;
-    height: 100% !important;
+    width: 50px;
+    height: 50px;
   }
   --background: #7c7899;
   .header{
@@ -86,7 +86,7 @@ ion-content{
             margin-left: 40px;
           }
           .message{
-            background:  rgb(2, 6, 247);
+            background:  rgb(76, 78, 190);
             position: relative;
           }
           .message.last{
@@ -139,7 +139,7 @@ ion-content{
           .message{
             color: #fff;
             margin-left: 25%;
-            background: #feacac;
+            background:  rgb(76, 78, 190);
             background-attachment: fixed;
             position: relative;
           }
@@ -191,3 +191,5 @@ ion-content{
     }
   }
 }
+
+  

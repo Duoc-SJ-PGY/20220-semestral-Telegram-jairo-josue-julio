@@ -2,7 +2,7 @@
     "data":[
         {
 
-            "name": "Han",
+            "name": "Han Solo",
             "state": "Online",
             "tiempo": "Contacto hace 5 días ",
             "numero": "+56 9 975667",
@@ -12,11 +12,29 @@
         {
 
             "name": "Doctor Raro",
-            "state": "......",
+            "state": "Online",
             "tiempo": "Contacto hace ∞ ",
             "numero": "+56 9 977897",
             "perfil": "Disponible",
             "imagen": "assets/img/doctor.jpg"
+        },
+        {
+
+            "name": "Don Omar",
+            "state": "Online",
+            "tiempo": "Desde que sali con tu mujer",
+            "numero": "+56 9 977897",
+            "perfil": "Disponible",
+            "imagen": "assets/img/donomar.jpg"
+        },
+        {
+
+            "name": "Eren Jaeger",
+            "state": "TATAKAE!!!",
+            "tiempo": "Hace muchito",
+            "numero": "+56 9 97785987",
+            "perfil": "Restaurando la patria",
+            "imagen": "assets/img/eren.jpg"
         }
     
         

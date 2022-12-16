@@ -14,28 +14,82 @@
     </div>
   </ion-toolbar>
 
-<ion-content>
-  <div class="conversation ion-padding">
-    <div class="chat-section" id="chat">
-      <div class="chat">
-        <div class="mine messages">
-          <div class="message">
-            BIEN GRACIA!
+  <ion-content>
+    <div class="conversation ion-padding">
+      <div class="chat-section" id="chat">
+        <div class="chat">
+          <div class="mine messages">
+            <div class="message">
+              ?????????????
+            </div>
+            <div class="message last">
+              Que es TATAKAE??
+            </div>
+            <span>
+              <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+              <ion-modal [keepContentsMounted]="true">
+                <ng-template>
+                  <ion-datetime id="datetime"></ion-datetime>
+                </ng-template>
+              </ion-modal>
+            </span>
           </div>
-          <div class="message last">
-            como tai tu ?
+          <div class="mine messages">
+            <div class="message">
+              Manito tas bien?
+            </div>
+            <div class="message last">
+              Ve y habla con tu papás mejor XDDD
+            </div>
+            <span>
+              <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+              <ion-modal [keepContentsMounted]="true">
+                <ng-template>
+                  <ion-datetime id="datetime"></ion-datetime>
+                </ng-template>
+              </ion-modal>
+            </span>
           </div>
-          <span>
-            <ion-icon name="checkmark-done-outline"></ion-icon>1:44 PM
-          </span>
+          <div class="mine messages">
+            <div class="message">
+              Tú y ella en una cama, allá en Bayamo
+            </div>
+            <div class="message last">
+              Quizás en Isla Verde o Carolina, cuántos hoteles ensució
+            </div>
+            <span>
+              <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+              <ion-modal [keepContentsMounted]="true">
+                <ng-template>
+                  <ion-datetime id="datetime"></ion-datetime>
+                </ng-template>
+              </ion-modal>
+            </span>
+          </div>
+          <div class="mine messages">
+            <div class="message">
+              Bueno....
+            </div>
+            <div class="message last">
+              Apostare todo en la ultima batalla ;)
+            </div>
+            <span>
+              <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+              <ion-modal [keepContentsMounted]="true">
+                <ng-template>
+                  <ion-datetime id="datetime"></ion-datetime>
+                </ng-template>
+              </ion-modal>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="message-input">
+        <ion-input placeholder="Escriba su mensaje..."></ion-input>
+        <div class="send-button">
+          <ion-button><ion-icon name="send-sharp"></ion-icon></ion-button>
         </div>
       </div>
     </div>
-    <div class="message-input">
-      <ion-input placeholder="Escriba su mensaje..."></ion-input>
-      <div class="send-button">
-        <ion-icon name="send-sharp"></ion-icon>
-      </div>
-    </div>
-  </div>
-</ion-content>
+    </ion-content>
+    

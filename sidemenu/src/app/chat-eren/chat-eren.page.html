@@ -1,0 +1,108 @@
+<ion-toolbar>
+  <div class="header ion-padding">
+    <div class="info">
+      <ion-back-button name="chevron-back-outline" defaultHref="folder/:id"></ion-back-button>
+      <ion-avatar>
+        <img src="assets/img/eren.jpg" alt="">
+      </ion-avatar>
+      <span class="details">
+        <h1>Eren Jaeger</h1>
+        <p>Online</p>
+      </span>
+    </div>
+    <div class="calling">
+      <ion-icon name="call-outline"></ion-icon>
+    </div>
+  </div>
+</ion-toolbar>
+
+<ion-content>
+<div class="conversation ion-padding">
+  <div class="chat-section" id="chat">
+    <div class="chat">
+      <div class="yours messages">
+        <div class="message other">
+          TATAKAE!
+        </div>
+        <div class="message other">
+          TATAKAE!
+        </div>
+        <div class="last-message-other">
+          <ion-avatar>
+            <img src="assets/img/eren.jpg" alt="">
+          </ion-avatar>
+          <div class="message last">
+            TATAKAE!
+          </div>
+        </div>
+        <span><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal></span>
+      </div>
+      <div class="mine messages">
+        <div class="message">
+          ?????????????
+        </div>
+        <div class="message last">
+          Que es TATAKAE??
+        </div>
+        <span>
+          <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </span>
+      </div>
+      <div class="yours messages">
+        <div class="message other">
+          TATAKAE!!
+        </div>
+        <div class="message other">
+          TATAKAE!!
+        </div>
+        <div class="last-message-other">
+          <ion-avatar>
+            <img src="assets/img/eren.jpg" alt="">
+          </ion-avatar>
+          <div class="message last">
+            TATAKAE!! TATAKAE!! TATAKAE!!
+          </div>
+        </div>
+        <span><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal></span>
+      </div>
+      <div class="mine messages">
+        <div class="message">
+          Manito tas bien?
+        </div>
+        <div class="message last">
+          Ve y habla con tu papás mejor XDDD
+        </div>
+        <span>
+          <ion-icon name="checkmark-done-outline"></ion-icon><ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime id="datetime"></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="message-input">
+    <ion-input placeholder="Escriba su mensaje..."></ion-input>
+    <div class="send-button">
+      <ion-button><ion-icon name="send-sharp"></ion-icon></ion-button>
+    </div>
+  </div>
+</div>
+</ion-content>
